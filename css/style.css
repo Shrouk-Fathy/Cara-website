@@ -126,7 +126,7 @@ section:nth-of-type(1) div:nth-child(1) h1 {
 }
 section:nth-of-type(1) div:nth-child(1) button {
   background-color: transparent;
-  background-image: url("images/rest/button.jpg");
+  background-image: url("../images/rest/button.jpg");
   border: 0;
   color: #345fb4;
   padding: 14px 80px 14px 65px;
@@ -373,7 +373,7 @@ section:nth-of-type(5) > div:nth-child(1) .img {
   border-radius: 30px;
   height: 500px;
   width: 100%;
-  background-image: url("images/rest/w1.jpg");
+  background-image: url("../images/rest/w1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@ section:nth-of-type(5) > div:nth-child(2) .img {
   border-radius: 30px;
   height: 500px;
   width: 100%;
-  background-image: url("images/rest/w2.jpg");
+  background-image: url("../images/rest/w2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -436,7 +436,7 @@ section:nth-of-type(7) {
   flex-direction: column;
   height: 80vh;
   width: 100%;
-  background-image: url("images/rest/background.jpg");
+  background-image: url("../images/rest/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -492,7 +492,7 @@ section:nth-of-type(8) > div {
   padding: 40px;
 }
 section:nth-of-type(8) > div:nth-child(1) {
-  background-image: url("images/rest/progress.jpg");
+  background-image: url("../images/rest/progress.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

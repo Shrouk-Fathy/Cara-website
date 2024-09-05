@@ -9,7 +9,7 @@ section:nth-of-type(8){
     >div{
         padding: 40px;
         &:nth-child(1){
-            @include Bg("images/rest/progress.jpg",center,contain);
+            @include Bg("../images/rest/progress.jpg",center,contain);
             border-radius: 30px;
             border: 1px solid #eee;
             width: 300px;

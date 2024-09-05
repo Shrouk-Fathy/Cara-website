@@ -5,7 +5,7 @@
 section:nth-of-type(7){
     @include Flex(center,center,column);
     @include Dimensions(100% , 80vh);
-    @include Bg("images/rest/background.jpg",center,cover);
+    @include Bg("../images/rest/background.jpg",center,cover);
     p{
         font-size: 30px;
         color: $color-azure-dark;

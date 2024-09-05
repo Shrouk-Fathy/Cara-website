@@ -20,7 +20,7 @@ section:nth-of-type(5){
                 margin: 0 auto;
                 border-radius: 30px;
                 @include Dimensions(100% , 500px);
-                @include Bg("images/rest/w1.jpg",center,cover);
+                @include Bg("../images/rest/w1.jpg",center,cover);
             }
         }
         &:nth-child(2){
@@ -29,7 +29,7 @@ section:nth-of-type(5){
                 margin: 0 auto;
                 border-radius: 30px;
                 @include Dimensions(100% , 500px);
-                @include Bg("images/rest/w2.jpg",center,cover);
+                @include Bg("../images/rest/w2.jpg",center,cover);
             }
         }
     }

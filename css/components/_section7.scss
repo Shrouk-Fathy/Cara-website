@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../variables/colors";
+@import "../helper/mixins";
+
+section:nth-of-type(7){
+    @include Flex(center,center,column);
+    @include Dimensions(100% , 80vh);
+    @include Bg("images/rest/background.jpg",center,cover);
+    p{
+        font-size: 30px;
+        color: $color-azure-dark;
+        font-family: 'Dancing Script';
+    }
+    form{
+        width: min(600px,70vw);
+        @include Flex(center , center , column);
+        >*{
+            margin-top: 10px;
+            border: 1px solid $color-gray;
+            padding: 15px;
+            background-color: $color-light;
+            width: 100%;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: $color-gray;
+                border: 1px solid $color-azure-dark;
+            }
+
+        }
+        input[type="submit"]{
+            width: 200px;
+            font-size: 18px;
+            background-color: #4a608c;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid $color-azure-dark;
+                color: #000;
+                background-color: transparent;
+            }
+        }
+      
+    }
+}

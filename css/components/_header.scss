@@ -1,0 +1,73 @@
+@import "../variables/colors";
+@import "../helper/mixins";
+
+header {
+    font-size: 1.2rem;
+    @include Dimensions(auto , 11vh);
+    @include Flex(space-between, center , auto);
+    @include Position(sticky,0,auto,auto,auto);
+    z-index: 19999;
+    background-color: #E3E6F3;
+    overflow: hidden;
+    padding: 20px 80px;
+    transition: all 0.3s ease;
+        #navbar {
+        @include Flex;
+        
+        li {
+            @include Position(relative,auto,auto,auto,auto);
+            list-style: none;
+            display: inline-block;
+            padding: 0 20px;
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                color: $color-gray-dark;
+                &:hover,&.active{
+                    color: #345fb4;
+                }
+                &:not([href="cart.html"]):hover{                   
+                    transition: all 0.10s ease;
+                }
+                &.active::after,&:not([href="cart.html"]):hover::after{
+                    content:"";
+                    background-color: #345fb4;
+                    @include Dimensions(40% , 2px);
+                    @include Position(absolute ,auto ,auto ,0 , 20px);
+
+                }
+            }
+            
+            &:nth-child(6) {
+                a {
+                    #cart {
+                        position: relative;
+                        
+                        div {
+                            @include Position(absolute , -10px , 8px , auto , auto);
+                            @include Dimensions(18px , 18px);
+                            @include Flex;
+                            border-radius: 50%;
+                            background-color: #345fb4;
+                            color: $color-light;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .logo {
+        margin-left: 50px;
+        @include Dimensions(150px , 90%);
+    }
+}
+
+@media screen and (max-width:700px){
+    header{
+        #navbar{
+            display: none;
+        }
+    }
+}

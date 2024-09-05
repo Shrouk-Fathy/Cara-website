@@ -1,0 +1,73 @@
+@import "../variables/colors";
+@import "../helper/mixins";
+
+
+section:nth-of-type(1){
+    background-color: $color-gray-light;
+    @include Dimensions(100% , null);
+    padding: 0 20px;
+    min-height: 90vh;
+    margin: 0 auto;
+   // Here (Flex) must come before (Grid),otherwise problems will occur.
+    @include Flex(space-around,null,null);
+    @include Grid(90vh , repeat(auto-fit , minmax(340px , auto)),40px);
+
+ 
+
+    div:nth-child(1){
+        @include Flex(center , center , column);
+        >*{
+            text-align: center;
+        }
+        h2{
+            padding-bottom: 15px;
+            font-size: 1.9rem;
+        }
+        h4{
+            padding-bottom: 15px;
+            font-size: 1.5rem;
+            color: $color-gray-dark;
+        }
+        h1{
+            font-size: 4rem;
+            color: $color-azure-dark;
+            font-family: "Dancing Script";
+        }
+        button{
+            background-color: transparent;
+            background-image: url("images/rest/button.jpg");
+            border: 0;
+            color: $color-azure-dark;
+            padding: 14px 80px 14px 65px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    div:nth-child(2){
+        img{
+            @include Dimensions(100% , 100%);
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    section:nth-of-type(1){
+        div:nth-child(1){
+            
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+            h4{
+                padding: 10px;
+                font-size: 1.3rem;
+            }
+
+        }
+ }
+}
+
+

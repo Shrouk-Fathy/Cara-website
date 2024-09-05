@@ -1,0 +1,29 @@
+@mixin Bg ($url , $position:center , $size:100%) {
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+@mixin Flex ($justify:center,$align:center,$direction:row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin Grid ($grid-row:1fr,$grid-col:1fr,$gap) {
+    display: grid;
+    grid-template-columns: $grid-col;
+    grid-template-rows: $grid-row;
+    grid-gap: $gap;
+}
+@mixin Dimensions($width:100% , $height){
+    height: $height;
+    width: $width;
+}
+@mixin Position($position, $top, $right , $bottom ,$left){
+    position: $position;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+}

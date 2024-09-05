@@ -1,0 +1,74 @@
+@import "../variables/colors";
+@import "../helper/mixins";
+
+section:nth-of-type(4){
+   @include Dimensions(100% , 80vh);
+   background-color: $color-gray-light;
+   swiper-slide{
+      min-height: 80vh;
+      @include Grid(1fr , repeat(auto-fit , minmax(350px , 1fr)), 40px);
+      >div{
+          @include Flex();
+          @include Dimensions(400px , 90%);
+          margin: 0 auto;
+          padding: 20px;
+          overflow: hidden;
+      }
+      .content{
+        @include Flex(null,flex-start,column);
+        @include Dimensions(600px , 90%);
+        font-size: 30px;
+        // word-break: break-all;
+        h2{
+            font-size: 3.2rem;
+            font-family: "Dancing Script";
+            font-weight: bold;
+            color: $color-azure-dark;
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        button:hover{
+            border: 2px solid $color-azure-dark;
+        }
+      }
+      .video-cont{
+        background-color: $color-light;
+        border-radius: 30px;
+        transform: rotate(2deg);
+        padding: 10px;
+        margin-top: 20px;
+        video{
+            object-fit: cover;
+            @include Dimensions(100% , 100%);
+            border-radius: 30px;
+        }
+      }
+   }
+}
+
+@media screen and (max-width:1010px){
+    section:nth-of-type(4){
+        @include Dimensions(100% , 150vh);
+        swiper-slide{
+            height: 1200px;
+           @include Grid(2fr , minmax(350px ,auto) , 0px);
+           .content{
+            @include Dimensions(null , 100%);
+            max-width: 95%;
+                h2{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+           }
+           .video-cont{
+            @include Dimensions(null , 50%);
+            max-width: 95%;
+            margin-bottom: 150px;
+           }
+        }
+    }
+}
+

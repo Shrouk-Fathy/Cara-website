@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import "./components/header";
+@import "./components/section1",
+"./components/section2",
+"./components/section3",
+"./components/section4",
+"./components/section5",
+"./components/section6",
+"./components/section7",
+"./components/section8",
+"./components/section9",
+"./components/footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #222;
+}
+h2{
+    font-size: 2.915rem;
+    line-height: 1.067;
+    color: #222;
+}
+h4{
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: #222;
+}
+h6{
+    font-size: 1rem;
+    line-height: 1.125;
+}
+p{
+    font-size: 1.2rem;
+    color: #717875;
+    margin: 15px 0 20px 0;
+    text-align: center;
+}
+button{
+    top:50%;
+    color:#000;
+    border: 2px solid #fff;
+    border-radius:10px;
+    background-color: transparent;
+    padding: 1em 2em;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.section-p1{
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.icon-cont{
+    @include Flex();
+    @include Dimensions(40px,40px);
+    border-radius: 50%;
+    border: 1px solid #345fb4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    svg{
+        @include Dimensions(50%,50%);
+        color: #345fb4;
+        transition: all 0.3s ease;
+    }
+}
+.icon-cont:hover{
+    border: 1px solid #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    svg{
+        color: #000;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    h2,h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

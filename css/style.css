@@ -82,6 +82,14 @@ header .logo {
   height: 90%;
   width: 150px;
 }
+header .scroller {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 3px;
+  background-color: #345fb4;
+}
 
 @media screen and (max-width: 700px) {
   header #navbar {

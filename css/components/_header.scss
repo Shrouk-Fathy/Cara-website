@@ -62,6 +62,14 @@ header {
         margin-left: 50px;
         @include Dimensions(150px , 90%);
     }
+    .scroller{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 3px;
+        background-color: $color-azure-dark;
+    }
 }
 
 @media screen and (max-width:700px){

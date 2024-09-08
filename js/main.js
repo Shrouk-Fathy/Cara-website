@@ -46,3 +46,14 @@ window.addEventListener('scroll', function() {
         });
     }
 });
+// -------------------------------------------------------------------
+
+let element = document.querySelector(".scroller");
+// let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let height = document.body.scrollHeight - document.body.clientHeight;
+
+window.addEventListener("scroll" , function(){
+   
+    element.style.width = `${(window.scrollY / height) * 100}%`;
+})
+

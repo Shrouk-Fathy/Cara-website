@@ -11,10 +11,10 @@ Open the index.html file in your web browser to view Cara website.
 Preview
 Witness the live demonstration of cara website [here](https://shrouk-fathy.github.io/Cara-website/).
 
-Technologies Used
-HTML
-CSS
-SASS
-Java Script
+###Technologies Used
+-HTML
+-CSS
+-SASS
+-Java Script
 
 Feel free to provide any feedback or suggestions for further improvements. Enjoy! ❤🌬️
